@@ -1,5 +1,5 @@
 <template>
-  <Menu v-slot="{ open }" as="div" class="relative inline-block text-left">
+  <Menu v-slot="{ open }" as="div" class="relative inline-block text-start">
     <Popover
       :transition="dropdownTransition"
       :show="open"
@@ -19,7 +19,7 @@
           class="mt-2 min-w-40 divide-y divide-outline-gray-modals rounded-lg bg-surface-modal shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
           :class="{
             'mt-2': ['bottom', 'left', 'right'].includes(placement),
-            'ml-2': placement == 'right-start',
+            'ms-2': placement == 'right-start',
           }"
         >
           <MenuItems
@@ -60,13 +60,13 @@
                     <FeatherIcon
                       v-if="item.icon && typeof item.icon === 'string'"
                       :name="item.icon"
-                      class="mr-2 h-4 w-4 flex-shrink-0 text-ink-gray-7"
+                      class="me-2 h-4 w-4 flex-shrink-0 text-ink-gray-7"
                       aria-hidden="true"
                     />
                     <component
                       :is="item.icon"
                       v-else-if="item.icon"
-                      class="mr-2 h-4 w-4 flex-shrink-0 text-ink-gray-7"
+                      class="me-2 h-4 w-4 flex-shrink-0 text-ink-gray-7"
                     />
                     <span class="whitespace-nowrap text-ink-gray-7">
                       {{ item.label }}

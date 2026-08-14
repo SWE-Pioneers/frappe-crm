@@ -86,7 +86,7 @@
                         ]"
                       >
                         <UserAvatar
-                          class="mr-2"
+                          class="me-2"
                           :user="option.value"
                           size="lg"
                         />
@@ -108,10 +108,10 @@
         </Combobox>
       </div>
     </div>
-    <ErrorMessage v-if="error" class="mt-2 pl-2" :message="error" />
+    <ErrorMessage v-if="error" class="mt-2 ps-2" :message="error" />
     <div
       v-if="info"
-      class="whitespace-pre-line text-sm text-ink-blue-3 mt-2 pl-2"
+      class="whitespace-pre-line text-sm text-ink-blue-3 mt-2 ps-2"
     >
       {{ info }}
     </div>
