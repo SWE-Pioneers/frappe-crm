@@ -222,7 +222,7 @@
                   aria-hidden="true"
                 />
               </div>
-              <div class="ml-auto whitespace-nowrap">
+              <div class="ms-auto whitespace-nowrap">
                 <TimelineTimestamp :date="activity.creation" />
               </div>
             </div>
@@ -303,7 +303,7 @@
                 </span>
               </div>
 
-              <div class="ml-auto whitespace-nowrap">
+              <div class="ms-auto whitespace-nowrap">
                 <TimelineTimestamp :date="activity.creation" />
               </div>
             </div>
@@ -366,7 +366,7 @@
                   </span>
                 </div>
 
-                <div class="ml-auto whitespace-nowrap">
+                <div class="ms-auto whitespace-nowrap">
                   <TimelineTimestamp :date="a.creation" />
                 </div>
               </div>

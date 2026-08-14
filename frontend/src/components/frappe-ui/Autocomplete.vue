@@ -29,7 +29,7 @@
               </div>
               <div
                 v-else
-                class="absolute text-ink-gray-4 text-left truncate w-full pr-7"
+                class="absolute text-ink-gray-4 text-start truncate w-full pe-7"
               >
                 {{ placeholder || '' }}
               </div>
