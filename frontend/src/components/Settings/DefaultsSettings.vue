@@ -42,6 +42,7 @@
           <Link
             v-model="settings.doc.currency"
             doctype="Currency"
+            :filters="{ enabled: 1 }"
             class="w-24"
           />
         </div>
