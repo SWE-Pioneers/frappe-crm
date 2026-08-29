@@ -11,7 +11,7 @@ app_icon_route = "/crm"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["swe_platform"]
 add_to_apps_screen = [
 	{
 		"name": "crm",
